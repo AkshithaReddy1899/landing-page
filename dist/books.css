@@ -1,0 +1,382 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doppio+One&family=Happy+Monkey&display=swap');*/
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    --logo-font: 'Dancing Script', cursive;
+    --primary-font: 'Oswald', sans-serif;
+    --secondary-font: 'EB Garamond', serif;
+    --primary-color: #648181;
+    --secondary-color: #C3A29E;
+    --third-color: #E8DBC5;
+    --fourth-color: #011638;
+    --fifth-color: #FFF4E9;
+}
+
+
+/*general styling*/
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: whitesmoke;
+    transition: 3s ease-in;
+    font-family: var(--secondary-font);
+    font-size: 1.2rem;
+}
+
+.background {
+    background: linear-gradient(160deg, #C3A29E, #C3A29E 4%, whitesmoke 60%, whitesmoke);
+}
+
+.logo {
+    font-family: var(--logo-font);
+    font-weight: bolder;
+}
+
+p,
+article {
+    text-align: left;
+    line-height: 2rem;
+}
+
+.sub-heading {
+    margin: 40px;
+    font-family: var(--primary-font);
+}
+
+section {
+    margin: 30px auto;
+}
+
+
+/*nav bar styling*/
+
+.navbar-nav {
+    margin: 0 auto 0 auto;
+}
+
+.nav-link {
+    font-family: var(--primary-font);
+    padding: 3px 10px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.login-signup {
+    margin: 3px 9px;
+}
+
+.join-btn:hover {
+    font-weight: bold;
+}
+
+
+/*header styling*/
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 80px;
+    line-height: 2rem;
+}
+
+.main-heading {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+.main-img-container {
+    width: 400px;
+    height: auto;
+}
+
+.main-para {
+    padding: 10px;
+}
+
+.btn {
+    background-color: var(--fourth-color);
+    color: white;
+    padding: 5px;
+}
+
+.ex-btn {
+    margin-bottom: 30px;
+}
+
+
+/*about us*/
+
+.about-row {
+    margin: 20px;
+    padding: 10px;
+}
+
+
+/*things that make different*/
+
+.section-2 {
+    padding: 10px 0;
+    margin: 40px 0;
+}
+
+.cover {
+    width: 100%;
+    height: 55vmin;
+    background: url("../assets/background/sharon-mccutcheon-eMP4sYPJ9x0-unsplash.jpg");
+    background-position: -24rem -19rem;
+    background-size: 150%;
+    position: relative;
+}
+
+.img-text {
+    margin: auto;
+    width: 60%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.cover .content {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding-top: 20vmin;
+}
+
+.img-text {
+    color: white;
+}
+
+.rect {
+    position: relative;
+    z-index: 1;
+    background: var(--third-color);
+    width: 15rem;
+    height: auto;
+    padding-top: 15px;
+    margin: 4rem 2rem;
+    border-radius: 0.5em;
+    box-shadow: 1px 2px 25px 0px var(--fourth-color);
+}
+
+.rect h1 {
+    font-size: 3.5rem;
+    color: var(--fourth-color);
+}
+
+.rect p {
+    text-align: center;
+}
+
+.numbers {
+    margin-top: -15vmin;
+}
+
+.num-text {
+    font-size: 1.5rem;
+    font-family: var(--secondary-font);
+}
+
+
+/*review*/
+
+.review {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.card-img-top {
+    margin: auto;
+}
+
+.card {
+    width: 300px;
+    height: auto;
+    margin: 40px;
+    border-radius: 5px;
+    background: rgba(255, 244, 233, 0.6);
+}
+
+.card-text {
+    margin-top: 10px;
+}
+
+.review span {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--fourth-color);
+}
+
+
+/*features*/
+
+.img-container {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.img-container img {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    margin: 10px;
+    background-color: rgba(100, 129, 129, 0.5);
+    padding: 10px;
+}
+
+.feature {
+    width: 280px;
+    height: auto;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.feature p {
+    text-align: center;
+}
+
+.features-sub-para {
+    text-align: center;
+}
+
+.feature-heading {
+    color: var(--secondary-color);
+}
+
+.features-sub-para {
+    margin: 0px auto;
+    float: center;
+}
+
+
+/*download section*/
+
+.section-5 {
+    padding: 10px;
+    margin: 5px;
+}
+
+.section-5 h3 {
+    text-align: center;
+    margin: 10px auto 20px auto;
+}
+
+.section-5-row {
+    margin-top: 30px;
+}
+
+.download {
+    display: flex;
+    padding: 10px;
+    margin: 60px;
+}
+
+.download-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.apple,
+.google {
+    width: 200px;
+    height: auto;
+    padding: 5px;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    position: absolute;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.about,
+.follow,
+.photos {
+    padding: 5px;
+    margin: 20px auto;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*media query
+
+@media screen and (min-width: 200px) {
+    .join-btn {
+        width: 100px;
+        margin: 4px;
+    }
+    .login-signup {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header {
+        margin: 60px 0;
+    }
+}
+
+@media screen and(min-width: 300px),
+(max-width: 980px) {
+    section {
+        margin: 20px;
+        padding: 10px;
+    }
+    .download {
+        display: none;
+    }
+    .apple,
+    .google {
+        width: 80px;
+        height: auto;
+    }
+}
+
+@media screen and(min-width:768px) {
+    .main-heading {
+        padding: 100px;
+        font-size: 1.4rem;
+    }
+}
